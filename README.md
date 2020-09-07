@@ -1,3 +1,20 @@
+# For UTC Lib:
+1. git clone git@github.com:utclibrary/alma-discovery.git
+2. git clone git@github.com:utclibrary/primo-explore-devenv.git
+3. Download and install the [Node version 10.15.3](https://nodejs.org/download/release/v10.15.3/)
+4. Restart computer
+5. from home directory run: 'npm install -g gulp'
+6. In project base directory (~/primo-explore-devenv) run : 'npm install'
+7. copy files: cp -r ~/alma-discovery/* ~/primo-explore-devenv/primo-explore/custom/
+8. gulp run
+9. http://localhost:8003/discovery/search?vid=01UTC_INST:DEV&sortby=rank
+10. gulp create-package
+
+* if you need to manage different versions of Node, use https://github.com/nvm-sh/nvm#git-install
+
+COMMANDS:
+gulp run {starts virtual environment}
+gulp create-package {builds .zip file and update ~/alma-discovery files}
 
 
 
